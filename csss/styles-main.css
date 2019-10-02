@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+}
+.wrapper {
+}
+header {
+  grid-area: header;
+}
+.listItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipeListItem {
+  border: solid 1px black;
+  width: 200px;
+  text-decoration: none;
+  justify-content: space-around;
+  margin-left: 20px;
+  text-align: center;
+
+  /* display: inline-block; */
+}
+.recipeLink {
+  color: red;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 5px;
+}
+/*  Removes Bullet Points */
+ul {
+  list-style-type: none;
+}
