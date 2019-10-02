@@ -49,7 +49,7 @@
       ]
     },
     {
-      "id": "2",
+      "id": "sauce",
       "name": "Sauce",
       "steps": [
         {
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "3",
+      "id": "chicken",
       "name": "Chicken",
       "steps": [
         {
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "id": "4",
+      "id": "mango_lassi",
       "name": "Mango Lassi",
       "steps": [
         {
