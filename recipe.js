@@ -1,5 +1,28 @@
 function renderRecipe(item) {
   console.log(item);
+  // destructure the item object
+  // FIXME
+  // Use each property of the item to fill in the recipe template
+  // Use the name property to fill in the text of the <h1>
+  // TODO: get the h1 element by its id and set the inner text to name
+  // Hint: you decide what the id is going to be. Set that in recipe.html
+  // FIXME
+  // Render the steps into the steps container <div>
+  // TODO: (in HTML) create a <div> in recipe.html to put the steps in
+  // Hint: Create a div in recipe.html with a specific id for you to reference
+  // You decide where the div will go and what id it will have
+  // TODO: Use the steps property to fill out the rest of instructions
+  // Hint: map over the steps array
+  // for each step, destructure the steps
+  // return a template literal string with allll the HTML of a step
+  // this big string will represent your reusable step template
+  // For arrays like ingredients and tools, use map again inside the template
+  // Join the array returned from the map into one string using .join("")
+  // For bonus points, chain the array methods of steps.map().join('');
+  // FIXME
+  // Get the containing div you made by the id you gave it
+  // Set the inner HTML of that container div to your steps HTML template string
+  // FIXME
 }
 
 function fetchRecipeById(recipeId) {
