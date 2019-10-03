@@ -1,0 +1,22 @@
+{
+  "item": {
+    "id": "chicken",
+    "name": "Chicken",
+    "steps": [
+      {
+        "number": "1",
+        "name": "Drumsticks",
+        "ingredients": [
+          {
+            "ingredient": "chicken drumsticks",
+            "measurement": "50lbs"
+          }
+        ],
+        "instruction": "Remove the skin from  50lbs of chicken drumsticks",
+        "tools": ["weight machine"],
+        "images": ["./weighing-01.jpg", "./skin-removal.jpg"],
+        "videos": ["./sauce-01.mp4"]
+      }
+    ]
+  }
+}

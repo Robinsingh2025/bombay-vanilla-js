@@ -1,0 +1,38 @@
+{
+  "item": {
+    "id": "mango_lassi",
+    "name": "Mango Lassi",
+    "steps": [
+      {
+        "number": "1",
+        "name": "Mixing",
+        "ingredients": [
+          {
+            "ingredient": "yogurt",
+            "measurement": "4qts"
+          },
+          {
+            "ingredient": "mango pulp can",
+            "measurement": "4 cans"
+          },
+          {
+            "ingredient": "milk",
+            "measurement": "1 gallon"
+          },
+          {
+            "ingredient": "sugar",
+            "measurement": "3 cups"
+          },
+          {
+            "ingredient": "orange color",
+            "measurement": "1 oz"
+          }
+        ],
+        "instruction": "Mix 4qts of yogurt, 4 cans of mango pulp, 1 gallon of milk, 3 cups of sugar, and 1 oz of orange coloring into the measurement bucket. Check the color and adjust coloring accordingly.",
+        "tools": ["measurement bucket"],
+        "images": ["./bucket-01.jpg"],
+        "videos": ["./mixing-bucket-01.mp4"]
+      }
+    ]
+  }
+}

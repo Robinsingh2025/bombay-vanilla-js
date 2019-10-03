@@ -1,0 +1,22 @@
+{
+  "item": {
+    "id": "sauce",
+    "name": "Sauce",
+    "steps": [
+      {
+        "number": "1",
+        "name": "Before Cooked",
+        "ingredients": [
+          {
+            "ingredient": "tomato sauce can",
+            "measurement": 5
+          }
+        ],
+        "instruction": "Grab 5 tomato sauce cans and put them in the big patela",
+        "tools": ["patela", "half-bucket"],
+        "images": ["./patela-1.jpg"],
+        "videos": ["./sauce-1.mp4"]
+      }
+    ]
+  }
+}

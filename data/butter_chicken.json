@@ -1,0 +1,50 @@
+{
+  "item": {
+    "id": "butter_chicken",
+    "name": "Butter Chicken",
+    "steps": [
+      {
+        "number": "1",
+        "name": "Tomato Sauce Base",
+        "ingredients": [
+          {
+            "ingredient": "tomato_sauce",
+            "measurement": "2qt"
+          }
+        ],
+        "instruction": "Put 2qts of Tomato Sauce in the patela",
+        "tools": ["patela"],
+        "images": ["./patela-01.jpg"],
+        "videos": ["./sauce-01.mp4"]
+      },
+      {
+        "number": "2",
+        "name": "Marination Sauce",
+        "ingredients": [
+          {
+            "ingredient": "marination_sauce",
+            "measurement": "1qt"
+          }
+        ],
+        "instruction": "Put 1 quart of marination sauce in a bucket",
+        "tools": ["bucket"],
+        "images": ["./-01.jpg"],
+        "videos": ["./-01.mp4"]
+      },
+      {
+        "number": "3",
+        "name": "Marinate",
+        "ingredients": [
+          {
+            "ingredient": "chicken",
+            "measurement": "20 lbs"
+          }
+        ],
+        "instruction": "Put 20 lbs of chicken in the marinade sauce in the bucket",
+        "tools": ["bucket"],
+        "images": ["./-01.jpg"],
+        "videos": ["./-01.mp4"]
+      }
+    ]
+  }
+}
