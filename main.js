@@ -9,8 +9,10 @@ function renderRecipeLinks(items) {
     li.className = 'recipeListItem';
     //   add attribute of href -> linking to another page
     // inside the <a> will be the name of the item
+    // const href = `recipe?recipe=${item.id}`;
+    const href = `recipe.html?recipe=${item.id}`;
     li.innerHTML = `
-    <a class="recipeLink" href="recipe.html?recipe=${item.id}">${item.name}</a>
+      <a class="recipeLink" href="${href}">${item.name}</a>
     `;
     // append the <li> to the <ul> recipeLinkList
     recipeLinkList.appendChild(li);
