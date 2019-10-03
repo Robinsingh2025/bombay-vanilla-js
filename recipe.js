@@ -12,6 +12,7 @@ function fetchRecipeById(recipeId) {
       renderRecipe(item);
     });
 }
+
 // using window.location, get the recipe id
 const search = document.location.search.substring(1);
 // https://www.w3schools.com/js/js_string_methods.asp
@@ -21,4 +22,10 @@ console.log(search);
 const params = new URLSearchParams(search);
 const recipeId = params.get('recipe');
 console.log(recipeId);
-fetchRecipeById(recipeId);
+if (recipeId) {
+  fetchRecipeById(recipeId);
+} else {
+  const error = `ERROR: No recipe id. id = ${recipeId}`;
+  // FIXME: document.getElementById("heading").innerText = error;
+  console.log(error);
+}
