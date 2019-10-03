@@ -21,7 +21,7 @@ function renderRecipeLinks(items) {
 
 function fetchAllRecipes() {
   // fetch the JSON data from our "server" (mocked)
-  fetch('data.json')
+  fetch('/data/items.json')
     .then(response => response.json())
     .then(json => renderRecipeLinks(json.items)); // send the items array to renderRecipeLinks()
 }
