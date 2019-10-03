@@ -11,17 +11,41 @@ html {
 *:after {
   box-sizing: inherit;
 }
-.wrapper {
+body {
+  height: 100vh;
+  margin: 20px;
+  margin: 0% 10% 0% 10%;
+}
+.container {
+  display: flex;
+  border: solid 2px black;
+  width: 50%;
+}
+.container,
+header {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  align-items: center;
+}
+.container .step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.step {
+  align-items: center;
+}
+.container .ingredient {
+  display: flex;
+}
+.ingredient {
+}
+.container .ingredient-list {
   display: flex;
   flex-direction: column;
 }
 
-.step1 {
-  border: solid red 2px;
-}
-
-.card {
-  border: solid black 1px;
-  display: flex;
-  flex-direction: row;
+.step {
 }
