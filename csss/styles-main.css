@@ -52,11 +52,6 @@ body {
 
 .heading {
 }
-@media (min-width: 900px) {
-  .wrapper {
-    display: flex;
-  }
-}
 
 .wrapperTwo {
   display: flex;
