@@ -25,6 +25,25 @@ function renderRecipe(item) {
   // FIXME
 }
 
+// Fetch just one recipe item by its id
+function fetchItem(id) {
+  // TODO: Set the main header to say that it's "Loading..."
+  // Get the h1 element by its id and set the inner text to something like "Loading..."
+  // Hint: you decide what the id is going to be. Set that in recipe.html
+  // FIXME
+  // Get the specific item's json data by using the id in the fetch url
+  // TODO: use the id variable instead of just this hardcoded butter_chicken id
+  const url = "data/butter_chicken.json"; // FIXME
+  fetch(url)
+    .then(response => response.json())
+    .then(json => {
+      // Once we have the data, grab just the item object by destructuring json
+      // FIXME
+      // Pass the item object to the render function
+      renderRecipe(item);
+    });
+}
+
 function fetchRecipeById(recipeId) {
   fetch('data.json')
     .then(response => response.json())
@@ -47,8 +66,10 @@ const recipeId = params.get('recipe');
 console.log(recipeId);
 if (recipeId) {
   fetchRecipeById(recipeId);
+  fetchItem(recipeId);
 } else {
   const error = `ERROR: No recipe id. id = ${recipeId}`;
+  // TODO: Leave a message for the user on the page
   // FIXME: document.getElementById("heading").innerText = error;
   console.log(error);
 }
