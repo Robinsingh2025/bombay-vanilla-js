@@ -33,7 +33,7 @@ function fetchItem(id) {
   // FIXME
   // Get the specific item's json data by using the id in the fetch url
   // TODO: use the id variable instead of just this hardcoded butter_chicken id
-  const url = "data/butter_chicken.json"; // FIXME
+  const url = 'data/butter_chicken.json'; // FIXME
   fetch(url)
     .then(response => response.json())
     .then(json => {
