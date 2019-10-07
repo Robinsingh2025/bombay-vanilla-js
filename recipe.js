@@ -1,5 +1,65 @@
+const container = document.getElementById('container');
+const step_Container = document.getElementById('steps-Container');
 function renderRecipe(item) {
-  console.log(item);
+  //TODO Step number
+
+  container.innerHTML = `<div class="wrapper card">
+  <header>
+    <h1 id="${item.id}" >${item.name}</h1>
+  </header>
+  ${item.steps.forEach(step => {
+    const stepRender = document.createElement('div');
+    stepRender.className = 'my-step';
+    stepRender.innerHTML = `<div class="step">
+    <h2>Step Number ${step.number} </h2>
+    <h4>Tomato Sauce base</h4>
+  </div>
+  <div class="ingredient">
+    <h4>Ingredient</h4>
+  </div>
+  <div class="ingredient-list">
+    <div>
+      <ul>
+        <li><span>2qt </span>tomato_sauce</li>
+      </ul>
+    </div>
+  </div>
+  <div class="instructions">
+    <div class=""><h4>Instructions</h4></div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Voluptatem, necessitatibus hic! Minus iure culpa similique optio
+      totam, numquam voluptate nam tempore cumque iste beatae, repudiandae
+      fugiat aspernatur! Id esse quibusdam eius deleniti ipsa ipsam vel
+      illo tempora quisquam natus. Consequatur quod aperiam quos obcaecati
+      deleniti, neque voluptatibus id. Mollitia, quaerat!
+    </p>
+  </div>
+  <div>
+    <div class="gallery">
+      <h4>Image</h4>
+      <img src="" alt="" />
+    </div>
+    <div class="video">
+      <h4>Video</h4>
+      <video width="320" height="240" controls>
+        <source src="/video/" type="video/mp4" />
+      </video>
+    </div>
+    <div class="tool">
+      <h4>Tools</h4>
+      <img src="" alt="" />
+    </div>
+  </div>
+  <div class="linkbox">
+    <a class="link" href="index.html">Back Home</a>
+  </div>`;
+    console.log(stepRender);
+  })}
+
+  
+  
+</div>`;
   // destructure the item object
   // FIXME
   // Use each property of the item to fill in the recipe template
@@ -39,7 +99,8 @@ function fetchItem(id) {
     .then(json => {
       // Once we have the data, grab just the item object by destructuring json
       // FIXME
-      // Pass the item object to the render function
+      // Pass
+      // the item object to the render function
       renderRecipe(item);
     });
 }

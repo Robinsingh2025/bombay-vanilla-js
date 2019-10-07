@@ -1,7 +1,7 @@
 const recipeLinkList = document.getElementById('recipeLinks');
 
 function renderRecipeLinks(items) {
-  console.log(typeof items);
+  console.log(items);
   // for each item
   items.forEach(item => {
     // So create li element and then have <a> inside the li

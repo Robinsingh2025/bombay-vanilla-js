@@ -44,7 +44,7 @@
           "instruction": "Put 20 lbs of chicken in the marinade sauce in the bucket",
           "tools": ["bucket"],
           "images": ["./-01.jpg"],
-          "videos": ["/video"]
+          "videos": ["./video"]
         }
       ]
     },
