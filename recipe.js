@@ -7,59 +7,52 @@ function renderRecipe(item) {
   <header>
     <h1 id="${item.id}" >${item.name}</h1>
   </header>
-  ${item.steps.forEach(step => {
-    const stepRender = document.createElement('div');
-    stepRender.className = 'my-step';
-    stepRender.innerHTML = `<div class="step">
-    <h2>Step Number ${step.number} </h2>
-    <h4>Tomato Sauce base</h4>
-  </div>
-  <div class="ingredient">
-    <h4>Ingredient</h4>
-  </div>
-  <div class="ingredient-list">
+    ${(step_Container.innerHTML = item.steps.map(step => {
+      const recipes = `<div class="step">
+      <h2>Step Number ${step.number} </h2>
+      <h4>${step.name}</h4>
+    </div>
+    <div class="ingredient">
+      <h4>Ingredient</h4>
+    </div>
+    <div class="ingredient-list">
+      <div>
+        <ul>
+          ${step.ingredients.map(ingredient => {
+            return `<li><span>${ingredient.measurement} </span>${ingredient.ingredient}</li>`;
+          })}
+        </ul>
+      </div>
+    </div>
+    <div class="instructions">
+      <div class=""><h4>Instructions</h4></div>
+      <p>
+        ${step.instruction}
+      </p>
+    </div>
     <div>
-      <ul>
-        <li><span>2qt </span>tomato_sauce</li>
-      </ul>
+      <div class="gallery">
+        <h4>Image</h4>
+        <img src="" alt="" />
+      </div>
+      <div class="video">
+        <h4>Video</h4>
+        <video width="320" height="240" controls>
+          <source src="/video/" type="video/mp4" />
+        </video>
+      </div>
+      <div class="tool">
+        <h4>Tools</h4>
+        <ul>
+        <li>${step.tools}</li>
+        </ul>
+        <img src="" alt="" />
+      </div>
     </div>
-  </div>
-  <div class="instructions">
-    <div class=""><h4>Instructions</h4></div>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Voluptatem, necessitatibus hic! Minus iure culpa similique optio
-      totam, numquam voluptate nam tempore cumque iste beatae, repudiandae
-      fugiat aspernatur! Id esse quibusdam eius deleniti ipsa ipsam vel
-      illo tempora quisquam natus. Consequatur quod aperiam quos obcaecati
-      deleniti, neque voluptatibus id. Mollitia, quaerat!
-    </p>
-  </div>
-  <div>
-    <div class="gallery">
-      <h4>Image</h4>
-      <img src="" alt="" />
-    </div>
-    <div class="video">
-      <h4>Video</h4>
-      <video width="320" height="240" controls>
-        <source src="/video/" type="video/mp4" />
-      </video>
-    </div>
-    <div class="tool">
-      <h4>Tools</h4>
-      <img src="" alt="" />
-    </div>
-  </div>
-  <div class="linkbox">
-    <a class="link" href="index.html">Back Home</a>
-  </div>`;
-    console.log(stepRender);
-  })}
-
-  
-  
-</div>`;
+   `;
+      return recipes;
+    }))}
+`;
   // destructure the item object
   // FIXME
   // Use each property of the item to fill in the recipe template
@@ -131,6 +124,7 @@ if (recipeId) {
 } else {
   const error = `ERROR: No recipe id. id = ${recipeId}`;
   // TODO: Leave a message for the user on the page
+
   // FIXME: document.getElementById("heading").innerText = error;
   console.log(error);
 }
