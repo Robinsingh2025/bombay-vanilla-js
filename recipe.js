@@ -1,5 +1,15 @@
 const container = document.getElementById('container');
 const step_Container = document.getElementById('steps-Container');
+const alert = document.getElementById('error-Alert');
+
+function createNode(element) {
+  return document.createElement(element); // Create the type of element you pass in the parameters
+}
+
+function append(parent, el) {
+  return parent.appendChild(el); // Append the second parameter(element) to the first one
+}
+
 function renderRecipe(item) {
   //TODO Step number
 
@@ -117,6 +127,7 @@ const search = document.location.search.substring(1);
 console.log(search);
 const params = new URLSearchParams(search);
 const recipeId = params.get('recipe');
+
 console.log(recipeId);
 if (recipeId) {
   fetchRecipeById(recipeId);
@@ -124,7 +135,11 @@ if (recipeId) {
 } else {
   const error = `ERROR: No recipe id. id = ${recipeId}`;
   // TODO: Leave a message for the user on the page
+  const body = document.getElementById('body');
+  const div = createNode('div');
+  div.innerHTML = error;
+  append(body, div);
 
+  console.log(alert);
   // FIXME: document.getElementById("heading").innerText = error;
-  console.log(error);
 }
