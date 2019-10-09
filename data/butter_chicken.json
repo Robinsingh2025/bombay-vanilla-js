@@ -8,7 +8,8 @@
         "name": "Tomato Sauce Base",
         "ingredients": [
           {
-            "ingredient": "tomato_sauce",
+            "id": "sauce",
+            "name": "tomato sauce",
             "measurement": "2qt"
           }
         ],
@@ -22,7 +23,8 @@
         "name": "Marination Sauce",
         "ingredients": [
           {
-            "ingredient": "marination_sauce",
+            "id": "sauce",
+            "name": "marination sauce",
             "measurement": "1qt"
           }
         ],
@@ -36,7 +38,8 @@
         "name": "Marinate",
         "ingredients": [
           {
-            "ingredient": "chicken",
+            "id": "chicken",
+            "name": "chicken",
             "measurement": "20 lbs"
           }
         ],

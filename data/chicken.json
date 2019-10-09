@@ -8,7 +8,7 @@
         "name": "Drumsticks",
         "ingredients": [
           {
-            "ingredient": "chicken drumsticks",
+            "name": "chicken drumsticks",
             "measurement": "50lbs"
           }
         ],

@@ -8,7 +8,7 @@
         "name": "Before Cooked",
         "ingredients": [
           {
-            "ingredient": "tomato sauce can",
+            "name": "tomato sauce can",
             "measurement": 5
           }
         ],

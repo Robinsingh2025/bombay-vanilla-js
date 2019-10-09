@@ -8,23 +8,23 @@
         "name": "Mixing",
         "ingredients": [
           {
-            "ingredient": "yogurt",
+            "name": "yogurt",
             "measurement": "4qts"
           },
           {
-            "ingredient": "mango pulp can",
+            "name": "mango pulp can",
             "measurement": "4 cans"
           },
           {
-            "ingredient": "milk",
+            "name": "milk",
             "measurement": "1 gallon"
           },
           {
-            "ingredient": "sugar",
+            "name": "sugar",
             "measurement": "3 cups"
           },
           {
-            "ingredient": "orange color",
+            "name": "orange color",
             "measurement": "1 oz"
           }
         ],
